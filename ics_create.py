@@ -19,7 +19,7 @@ def date_by_adding_business_days(from_date, add_days):
         if weekday >= 5: # sunday = 6
             continue
         business_days_to_add -= 1
-    return current_date
+    return current_date #got this from https://stackoverflow.com/questions/12691551/add-n-business-days-to-a-given-date-ignoring-holidays-and-weekends-in-python
 
 today = datetime.date.today()
 print today
